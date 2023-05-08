@@ -1,0 +1,468 @@
+/*ESTE ARCHIVO CONTIENE LOS ESTILOS DE TODAS LAS PÁGINAS CREADAS*/
+
+/*==============================================================*/
+
+/*ESTILOS PAGINA CATALOGO*/
+
+/*Le damos formato al cuerpo de la pagina*/
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+/*Le damos formato a la cabecera y sus elementos*/
+header{
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+    background:rgb(208, 154, 233);
+    align-items: center;
+    padding: 10px;
+}
+.logo h1{
+  margin-left: 700px;
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+#logo1{
+    width: 130px;
+    height: 130px;
+    transition: all .50s;
+}
+
+/*Generamos una pequeña animación en el logo*/
+#logo1:hover{
+    transform: scale(1.10);
+    cursor: pointer;
+    transition: all .50s;
+}
+.menu a{
+    text-decoration: none;    
+    color:black;
+    padding: 5px;
+    font-weight: 500px;
+    transition: all .30s;
+}
+.menu a:hover{
+    background: rgb(74, 5, 66);
+    color: azure;
+    transition: all .30s;  
+    font-weight: 500px; 
+}
+
+/*Le damos tamaño a las imagenes del carrusel principal*/
+.d-block{
+    height: 850px;
+}
+
+/*Le damos formato a los enlaces de las categorias, en este caso, imagenes y subtitulos*/
+.productos1 a{
+  text-decoration: none;
+  color: black;
+}
+.productos2 a{
+  text-decoration: none;
+  color: black;
+}
+
+/*Le damos formato a los contenedores de las categorias y sus elementos*/
+.categorias{
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 20px;
+}
+.categorias h1{
+    font-size: 50PX;
+}
+.productos1{
+    font-size: small;
+    display:flex;
+    width: 500px;
+    height: 500px;
+    margin-left: 300px;
+    margin-top: 30px;
+    align-items: center;    
+    padding: 150px;
+}
+.productos1 img{
+    margin: 30px;
+    text-align: center;
+    width: 300px;
+    height: 300px;
+    transition: all .50s;
+}
+.productos1 h1{    
+    margin: auto;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 20px;
+}
+.productos2{
+    display:flex;
+    width: 500px;
+    height: 500px;
+    margin-left: 300px;
+    margin-top: 50px;
+    align-items: center;    
+    padding: 150px;
+}
+.productos2 img{
+    margin: 30px;
+    text-align: center;
+    width: 300px;
+    height: 300px;
+    transition: all .50s;
+}
+.productos2 h1{
+    margin: auto;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 20px;
+}
+#prod img:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+    transition: all .50s;
+}
+#prod h1:hover{
+    color:crimson;
+    cursor: pointer;
+    transition: all .10s;
+    font-weight: 700;
+}
+#prod h1{
+    transition: all .10s;   
+    /*Esta linea define el tipo de animación y la duración de la misma*/ 
+}
+/*fin seccion Categorias*/
+
+/*=========================================================================*/
+
+/*Le damos formato a la sección para la publicidad*/
+.publicidad{
+    margin-top: 50px;
+    width: 100%;
+    height: 600px;
+}
+.principal img{
+    margin-left: 20px;
+    width: 1400px;
+    height: 650px;
+    float: left;
+}
+.lateral{
+    width: 23%;
+    height: 600px;    
+    margin-left: 20px; ;
+    float: left;
+}
+.lateral img{
+    width: 438px;
+    height: 295px;
+}
+#p1{
+    margin-top: 10px;
+}
+/*fin seccion publicidad*/
+
+/*=========================================================================*/
+
+/*Le damos formato a la sección footer y sus elementos*/
+/*Apartado de RRSS*/
+.footer{
+    margin-top: 50px;
+    width: 100%;
+    height: 400px;
+    background:rgb(28, 13, 35);
+    align-items: center;
+    float: left;
+}
+.redes {
+    padding: 50px 100px;
+    float: left;
+    z-index: 0;
+}
+.redes h3{
+    color: azure;
+    margin: auto;
+    text-align: auto;
+    vertical-align: middle;
+    font-size: 20px;
+}
+.redes img{    
+    width: 40px;
+    height: 40px;
+    margin: 8px;
+    text-align: center;
+}
+/*Apartado direccion y horarios de atención*/
+.presencial{
+    margin-top: 50px;
+    width: 1515px;
+    float:left;    
+}
+.presencial div{
+    margin-left: 400px;    
+}
+.presencial div h3{
+    font-size: 20px;
+    color: beige;
+}
+.presencial div p{
+    font-size: 15px;
+    margin-left: 55px;
+    margin-top: 25px;
+    color: beige;
+    line-height: 15px;    
+}
+/*Linea divisoria del footer*/
+.separador{
+    height: 10px;
+    width: 100%;
+    display: flex;
+}
+.linea {
+    margin-bottom: 60px;
+    border-top: 1px solid rgb(251, 249, 249);
+    width: 250px;
+    height: 2px;
+    padding: 0;
+    margin: 40px auto 0 auto;
+    float: left;
+    
+  }
+/*Datos de los desarrolladores y CopyRight*/
+  .firma{
+    width: 1820px;
+    text-align: center;
+    font-size: 15px;    
+    margin-top: 300px;
+    color: beige;
+    line-height: 15px;
+    float: none;
+  }
+  .firma p{
+    font-size: 12px;
+    color: darkgrey;
+    line-height: 4px;
+  }
+  .firma a{
+    text-decoration: none;
+    color: darkgrey;
+  }
+
+/*FIN DE ESTILOS PAGINA INDEX*/
+
+/*=========================================================================*/
+
+/*ESTILOS PAGINA CATALOGO*/
+
+  /*Le damos formato a la cabecera y sus elementos*/
+  header h1{
+    margin-left: 680px;    
+  }
+  .contencat{
+    height: 700px;
+  }
+  .titulogeneral{
+    margin-left: 800px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  /*Le damos formato a las imagenes del Catalogo*/ 
+  #resize{
+    margin-left: 40px;
+    height: 286px;
+    width: 200px;
+  }
+  #resize1{
+    margin-left: 80px;
+    height: 286px;
+    width: 110px;
+  }
+  #resize2{
+    margin-left: 50px;
+    height: 286px;
+    width: 200px;
+  }
+  /*Le damos formato a los contenedores de las imagenes*/
+  .catprod{
+    width: 100%;
+    height: 100px;
+    float: left;
+    margin-left: 50px;
+  }
+  .card{
+    margin: 5px;
+    float: left;
+    transition: all .50s;
+  }
+  /*Le damos animación a las tarjetas contenedoras*/
+  .card:hover{
+    transition: all .50s;
+    transform: scale(1.0012);
+    box-shadow: 5px 5px 20px;
+  }
+  /*Le damos formato al boton de "ir arriba"*/
+  .arriba{
+    border-radius: 2px;
+    margin-left: 930px;
+    margin-bottom: 50px;
+    width: 120px;
+    height: 40px;
+    background: rgb(234, 103, 221);
+    text-align: center;
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px;
+    transition: all .50s;
+  }
+  .arriba:hover{
+    transform: scale(1.1);
+    box-shadow: 10px 10px 10px;
+    cursor: pointer;
+    transition: all .50s;
+  }
+  .arriba a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;    
+  }
+
+/*FIN DE ESTILOS PAGINA CATALOGO*/
+
+/*=========================================================================*/
+
+/*ESTILO PAGINA QUIENES SOMOS*/
+
+/*Damos formato al cuerpo por medio de un fondo en degrade*/
+.body{
+    width: 100%;
+    height: 1000px;
+    background-image: url(firefox.png), url(bubbles.png), linear-gradient(to right, #c38fd9, rgba(255, 255, 255, 0));
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-position: bottom right, left, right;
+    background: -moz-linear-gradient(to right, rgb(154, 5, 156), rgba(255, 255, 255, 0)), -webkit-gradient(to right, rgba(30, 75, 115, 1), rgba(255, 255, 255, 0)), -ms-linear-gradient(to right, rgba(30, 75, 115, 1), rgba(255, 255, 255, 0)), linear-gradient(to right, rgba(30, 75, 115, 1), rgba(255, 255, 255, 0));
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+.Quienes{
+    text-size-adjust: 120px;
+}
+/*Color de cabecera principal*/    
+header{
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+    background:rgb(208, 154, 233);
+    align-items: center;
+    padding: 10px;
+}
+/*Margen de quienes somos*/
+header h1{
+    margin-left: 240px;
+}
+/*Interlineado de parrafo*/
+.parrafo{
+    line-height : 25px;
+}
+/*Ubicacion de logo*/
+.logo{
+    display: flex;
+    align-items: center;
+}
+/*Tamaño del logo*/
+#logo1{
+    width: 130px;
+    height: 130px;
+}
+/*Reaccion al paso del cursor del logo*/
+#logo1:hover{
+    transform: scale(1.10);
+    cursor: pointer;
+    transition: all .50s;
+}
+/*Estilos para menu*/
+.menu a{
+    text-decoration: none;
+    color:black;
+    padding: 5px;
+    font-weight: 500px;
+}
+.menu a:hover{
+    background: rgb(74, 5, 66);
+    color: azure;
+    transition: all .30s;  
+    font-weight: 500px; 
+}
+.d-block{
+    height: 850px;
+}
+
+/*FIN DE ESTILOS PAGINA QUIENES SOMOS*/
+
+/*=========================================================================*/
+
+/*ESTILO PAGINA CONTACTO*/
+
+/*Definimos el estilo del contenedor principal*/
+  .contenedor{
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;    
+  }
+/*Definimos el estilo del contenedor del formulario como tal y sus elementos*/
+  form{
+    padding: 5px 55px;
+    box-shadow: 0 0 20px rgb(0,0,0,0.2);
+    border-radius: 10px;
+    text-align: center;
+    width: 340px;
+  }
+  .input-group{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+  }
+  h2{
+    font-size: 35px;
+  }
+  label{
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+  input, textarea{
+    padding: 10px 25px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    border: 1px solid grey;
+    color: black;
+    outline: none;
+  }
+/*Definimos el estilo de los botones para enviar y limpiar la información*/  
+  .btn{
+    border-radius: 10px;
+    font-weight: 600;
+    background: rgb(234, 103, 221);
+    text-align: center;
+    box-shadow: 5px 5px 10px;
+    transition: all .50s;
+  }
+  .btn:hover{
+    background: rgb(245, 145, 235);
+    transform: scale(1.005);
+    box-shadow: 10px 10px 10px;
+    cursor: pointer;
+    transition: all .50s;
+  }
+
+/*FIN DE ESTILOS PAGINA CONTACTOS*/
+
+/*=========================================================================*/
+  
+
+  
