@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--Damos enlace a estilo CSS-->
+        <link rel="stylesheet" href="CSS/estilos.css">
+
+        <!--Cargamos el favicon-->
+        <link rel="icon" href="IMG/LogoEscoba1.png" type="image/jpg">
+
+        <!--Ponemos el titulo en el navegador-->
+        <title>Tienda Las 3B - Contacto</title>
+    </head>
+    <body>
+        <!--Creamos nuevamente el header con las opciones de menu-->
+        <header>        
+            <div class = "logo">
+                <a href="index.html">
+                    <img id="logo1" src="IMG/LogoTienda.png">
+                </a>
+                <h1 id="principal1">CONTÁCTENOS</h1>
+                
+            </div>
+            <nav class="menu">               
+                    <a href="index.html">Inicio</a>
+                    <a href="QuienesSomos.html">Quienes Somos</a>
+                    <a href="catalogo.html">Productos</a>
+                                
+            </nav>    
+        </header>
+        <div class="contenedor">
+            <!--Cargamos los campos del formulario-->
+            <!--El formulario es funcional. Envía los datos a los correos personales de los desarrolladores-->
+            <form action="https://formsubmit.co/kakobl1982@gmail.com" method="POST">
+                        <!--en la linea superior se establece donde seran enviados los datos-->
+                <h2>Formulario de Contacto</h2>
+                <div class="input-group">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" name="nombre" id="nombre" placeholder="Nombre"> 
+                    <label for="apellido">Apellido</label>
+                    <input type="text" name="apellido" id="apellido" placeholder="Apellido">
+                    <label for="telefono">Telefono</label>
+                    <input type="text" name="telefono" id="telefono" placeholder="Teléfono">
+                    <label for="correo">Correo Electronico</label>
+                    <input type="text" name="correo" id="correo" placeholder="Correo Electronico">
+                    <label for="comentarios">Comentarios</label>
+                    <textarea name="comentarios" id="comentarios" cols="30" rows="5" placeholder="Comentarios"></textarea>
+                    <!--Boton enviar-->
+                    <input class="btn" type="submit" value="Enviar">
+                    <!--Boton limpiar-->
+                    <input class="btn" type="reset" value="Limpiar">
+                    <!--Nos permite establecer un segundo correo donde llegara la información del formulario-->
+                    <input type="hidden" name="_cc" value="d.cruz15@alumnos.santotomas.cl">
+                    <!--Permite definir que no se abra una nueva pagina-->
+                    <input type="hidden" name="_next" value="contacto.html">
+                    <!--Permite definir que no se abra una pagina de captcha-->
+                    <input type="hidden" name="_captcha" value="false">
+                </div>
+            </form>
+        </div>
+    </body>
+</html>
